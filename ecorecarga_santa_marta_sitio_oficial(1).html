@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoRecarga Santa Marta | Limpieza e Higiene Biodegradable a Granel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Hoja de estilos estructural y tipográfica completa (garantiza formato perfecto incluso sin CDN externo) -->
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    button, input, select {
+      font-family: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Utilidades de visibilidad y contenedores */
+    .hidden { display: none !important; }
+    .block { display: block; }
+    .inline-block { display: inline-block; }
+    .inline-flex { display: inline-flex; }
+    .flex { display: flex; }
+    .grid { display: grid; }
+    .flex-col { flex-direction: column; }
+    .flex-wrap { flex-wrap: wrap; }
+    .flex-1 { flex: 1 1 0%; }
+    .shrink-0 { flex-shrink: 0; }
+    .items-center { align-items: center; }
+    .items-start { align-items: flex-start; }
+    .items-end { align-items: flex-end; }
+    .items-stretch { align-items: stretch; }
+    .justify-center { justify-content: center; }
+    .justify-between { justify-content: space-between; }
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+
+    .container-main {
+      width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    /* Tipografía con jerarquía clara */
+    h1, h2, h3, h4 {
+      color: #172554;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.18;
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 4.5vw, 3.65rem);
+      font-weight: 800;
+      color: #172554;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-highlight {
+      color: #1d4ed8;
+      border-bottom: 4px solid #38bdf8;
+      padding-bottom: 2px;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #1d4ed8;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+      font-weight: 800;
+      color: #172554;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-lead {
+      font-size: 1.025rem;
+      color: #475569;
+      line-height: 1.65;
+      max-width: 44rem;
+    }
+
+    /* Barra superior */
+    .top-bar {
+      background-color: #172554;
+      color: #eff6ff;
+      font-size: 0.8125rem;
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid #1e3a8a;
+      text-align: center;
+    }
+
+    /* Header Sticky */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background-color: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+    }
+
+    .header-inner {
+      height: 4.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 1.75rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #475569;
+    }
+
+    .nav-links a:hover {
+      color: #1d4ed8;
+    }
+
+    @media (min-width: 1024px) {
+      .nav-links { display: flex; }
+      .mobile-only-btn { display: none !important; }
+    }
+
+    /* Botones estándar */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background-color: #1d4ed8;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      padding: 0.875rem 1.5rem;
+      border-radius: 0.875rem;
+      box-shadow: 0 6px 16px rgba(29, 78, 216, 0.24);
+      transition: background-color 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover {
+      background-color: #1e40af;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background-color: #ffffff;
+      color: #172554;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      padding: 0.875rem 1.4rem;
+      border-radius: 0.875rem;
+      border: 1px solid #cbd5e1;
+      transition: background-color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background-color: #eff6ff;
+    }
+
+    .btn-sm-emerald {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background-color: #eff6ff;
+      color: #1e3a8a;
+      border: 1px solid #bfdbfe;
+      font-weight: 700;
+      font-size: 0.8125rem;
+      padding: 0.55rem 0.95rem;
+      border-radius: 0.75rem;
+    }
+
+    .btn-sm-emerald:hover {
+      background-color: #dbeafe;
+    }
+
+    /* Cuadrículas responsivas */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 7fr 5fr;
+        gap: 3rem;
+      }
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.875rem;
+    }
+
+    @media (min-width: 640px) {
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .stat-card {
+      background-color: #ffffff;
+      border: 1px solid #e7e5e4;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+
+    .stat-number {
+      font-size: 1.55rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #475569;
+      margin-top: 0.35rem;
+      line-height: 1.35;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .two-col-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .three-col-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .three-col-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .protocol-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .protocol-grid {
+        grid-template-columns: 5fr 7fr;
+      }
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      .calc-grid {
+        grid-template-columns: 7fr 5fr;
+      }
+    }
+
+    .b2b-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .b2b-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Tarjetas de producto */
+    .product-card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.35rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 10px 24px rgba(29, 78, 216, 0.1);
+    }
+
+    .product-img-wrap {
+      position: relative;
+      height: 12.5rem;
+      background-color: #dbeafe;
+      overflow: hidden;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .pill-badge-top {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background-color: rgba(255, 255, 255, 0.96);
+      color: #172554;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.3rem 0.65rem;
+      border-radius: 0.65rem;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+    }
+
+    .pill-badge-save {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      background-color: #1d4ed8;
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.28rem 0.65rem;
+      border-radius: 0.55rem;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.16);
+    }
+
+    /* Interruptor BYOC */
+    .switch-label {
+      position: relative;
+      display: inline-block;
+      width: 3rem;
+      height: 1.7rem;
+      flex-shrink: 0;
+    }
+
+    .switch-label input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .switch-slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background-color: #cbd5e1;
+      border-radius: 9999px;
+      transition: 0.25s;
+    }
+
+    .switch-slider::before {
+      position: absolute;
+      content: "";
+      height: 1.3rem;
+      width: 1.3rem;
+      left: 0.2rem;
+      bottom: 0.2rem;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transition: 0.25s;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-label input:checked + .switch-slider {
+      background-color: #1d4ed8;
+    }
+
+    .switch-label input:checked + .switch-slider::before {
+      transform: translateX(1.3rem);
+    }
+
+    /* Paneles laterales y modales */
+    .overlay-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(2, 6, 23, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 50;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 27rem;
+      background-color: #ffffff;
+      z-index: 60;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -8px 0 30px rgba(0, 0, 0, 0.2);
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .cart-drawer.open {
+      transform: translateX(0);
+    }
+
+    .modal-center {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(2, 6, 23, 0.72);
+      backdrop-filter: blur(4px);
+      z-index: 70;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .toast-box {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 80;
+      background-color: #172554;
+      color: #ffffff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.25);
+      border: 1px solid #1d4ed8;
+    }
+
+    /* Formularios */
+    .form-input {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      border-radius: 0.75rem;
+      border: 1px solid #cbd5e1;
+      background-color: #ffffff;
+      font-size: 0.875rem;
+      color: #1e293b;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #1d4ed8;
+      box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.14);
+    }
+
+    /* Tablas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 0.75rem 0.85rem;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 0.8125rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================================================================== -->
+  <!-- BARRA SUPERIOR DE ANUNCIOS                                            -->
+  <!-- ===================================================================== -->
+  <div class="top-bar">
+    <div class="container-main flex flex-wrap items-center justify-center" style="gap: 0.65rem;">
+      <span style="color: #93c5fd; font-weight: 700;">● Economía Circular en Santa Marta D.T.C.H.</span>
+      <span style="color: #1e40af;">|</span>
+      <span>Trae tu propio envase limpio y obtén <strong style="color: #ffffff; text-decoration: underline; text-decoration-color: #38bdf8;">5 % de descuento adicional</strong></span>
+      <span style="color: #1e40af;">|</span>
+      <span style="color: #7dd3fc; font-weight: 700;">Recargas desde 250 ml o $2.000 COP</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- NAVEGACIÓN PRINCIPAL STICKY                                           -->
+  <!-- ===================================================================== -->
+  <header class="site-header">
+    <div class="container-main header-inner">
+      <!-- Marca Oficial -->
+      <a href="#inicio" class="flex items-center" style="gap: 0.75rem;">
+        <div style="width: 2.65rem; height: 2.65rem; border-radius: 0.9rem; background: linear-gradient(135deg, #1d4ed8, #0284c7); display: flex; align-items: center; justify-content: center; color: #ffffff; box-shadow: 0 4px 10px rgba(29, 78, 216, 0.25);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+            <path d="M9.5 14.5c1.5 1.2 3.8 1.2 5.2-.2"/>
+            <path d="M14.5 11.5l.5 2.8-2.8-.5"/>
+          </svg>
+        </div>
+        <div>
+          <span style="display: block; font-size: 1.2rem; font-weight: 800; color: #172554; line-height: 1.15;">EcoRecarga</span>
+          <span style="display: block; font-size: 0.7rem; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 0.08em;">Santa Marta • Refill</span>
+        </div>
+      </a>
+
+      <!-- Enlaces Desktop -->
+      <nav class="nav-links">
+        <a href="#catalogo">Catálogo a Granel</a>
+        <a href="#protocolo">Protocolo 4 Pasos</a>
+        <a href="#impacto">Calculadora Ahorro</a>
+        <a href="#b2b">Planes B2B (20 L)</a>
+        <a href="#ubicacion">Puntos y Ruta</a>
+      </nav>
+
+      <!-- Acciones -->
+      <div class="flex items-center" style="gap: 0.6rem;">
+        <button onclick="openCanvasModal('canvas')" class="btn-sm-emerald">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M9 3v18M15 3v18M3 12h18"/>
+          </svg>
+          <span>Modelo Canvas</span>
+        </button>
+
+        <button onclick="toggleCart(true)" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1d4ed8; color: #ffffff; font-weight: 700; font-size: 0.85rem; padding: 0.6rem 1rem; border-radius: 0.8rem; box-shadow: 0 2px 6px rgba(29, 78, 216, 0.2);">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <span>Mi Recarga</span>
+          <span id="nav-cart-count" style="background-color: #ffffff; color: #1d4ed8; font-size: 0.75rem; font-weight: 800; padding: 0.1rem 0.5rem; border-radius: 999px;">0</span>
+        </button>
+
+        <button onclick="toggleMobileMenu()" class="mobile-only-btn" style="padding: 0.55rem; border-radius: 0.75rem; border: 1px solid #cbd5e1; color: #334155;" aria-label="Menú">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div id="mobile-menu" class="hidden" style="background-color: #ffffff; border-top: 1px solid #e2e8f0; padding: 1rem 1.25rem;">
+      <div class="flex flex-col" style="gap: 0.5rem; font-size: 0.9rem; font-weight: 600; color: #334155;">
+        <a href="#catalogo" onclick="toggleMobileMenu()" style="padding: 0.5rem 0;">Catálogo a Granel</a>
+        <a href="#protocolo" onclick="toggleMobileMenu()" style="padding: 0.5rem 0;">Protocolo Sanitario 4 Pasos</a>
+        <a href="#impacto" onclick="toggleMobileMenu()" style="padding: 0.5rem 0;">Calculadora de Ahorro e Impacto</a>
+        <a href="#b2b" onclick="toggleMobileMenu()" style="padding: 0.5rem 0;">Planes B2B Hostales y Restaurantes</a>
+        <a href="#ubicacion" onclick="toggleMobileMenu()" style="padding: 0.5rem 0;">Puntos en Santa Marta</a>
+        <button onclick="toggleMobileMenu(); openCanvasModal('canvas')" class="btn-sm-emerald" style="justify-content: center; margin-top: 0.25rem;">
+          Ver Dossier Canvas y Modelo Financiero
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- SECCIÓN PRINCIPAL (HERO)                                              -->
+  <!-- ===================================================================== -->
+  <section id="inicio" style="padding: 3.25rem 0 4.25rem 0; background-color: #ffffff;">
+    <div class="container-main">
+      <div class="hero-grid">
+        <!-- Columna Izquierda -->
+        <div style="display: flex; flex-direction: column; gap: 1.35rem;">
+          <div>
+            <span style="display: inline-flex; align-items: center; gap: 0.45rem; background-color: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; font-size: 0.75rem; font-weight: 800; padding: 0.4rem 0.9rem; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em;">
+              ♻️ «Trae tu propio envase» (BYOC) • ODS 12, 14, 6, 8 y 13
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Limpieza biodegradable a granel en <span class="hero-highlight">Santa Marta</span>, sin pagar por el plástico.
+          </h1>
+
+          <p style="font-size: 1.0625rem; color: #475569; line-height: 1.68; max-width: 39rem;">
+            Recarga detergentes, lavaloza, desinfectantes y jabones concentrados <strong style="color: #0f172a; font-weight: 700;">100 % biodegradables y libres de fosfatos</strong> con pesaje digital exacto desde <strong style="color: #1d4ed8; font-weight: 700;">250 ml o $2.000 COP</strong>. Ahorra entre un <strong style="color: #0f172a; font-weight: 700;">25 % y 35 %</strong> frente al supermercado mientras proteges nuestra Bahía y los ríos Manzanares y Gaira.
+          </p>
+
+          <div class="flex flex-wrap items-center" style="gap: 0.85rem; padding-top: 0.25rem;">
+            <a href="#catalogo" class="btn-primary">
+              <span>Comprar / Recargar a Granel</span>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
+            <a href="#b2b" class="btn-secondary">
+              <span>Planes Bidón 20 L (Hostales / B2B)</span>
+            </a>
+          </div>
+
+          <!-- Métricas Clave -->
+          <div class="stats-grid" style="padding-top: 0.75rem;">
+            <div class="stat-card" style="background-color: #f8fafc; border-color: #e2e8f0;">
+              <div class="stat-number" style="color: #1d4ed8;">25–35%</div>
+              <div class="stat-label">Ahorro directo sin envase virgen</div>
+            </div>
+            <div class="stat-card" style="background-color: #f8fafc; border-color: #e2e8f0;">
+              <div class="stat-number" style="color: #0284c7;">100%</div>
+              <div class="stat-label">Biodegradable (Res. 0689/2016)</div>
+            </div>
+            <div class="stat-card" style="background-color: #f8fafc; border-color: #e2e8f0;">
+              <div class="stat-number" style="color: #1e40af;">1 g</div>
+              <div class="stat-label">Tara digital certificada exacta</div>
+            </div>
+            <div class="stat-card" style="background-color: #f8fafc; border-color: #e2e8f0;">
+              <div class="stat-number" style="color: #2563eb;">9.000+</div>
+              <div class="stat-label">Botellas evitadas al año en SM</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Fotografía y Tarjeta Costera -->
+        <div>
+          <div style="position: relative; border-radius: 1.75rem; overflow: hidden; border: 4px solid #ffffff; box-shadow: 0 20px 40px rgba(23, 37, 84, 0.16); height: 29rem; background-color: #dbeafe;">
+            <img
+              src="https://unsplash.com/photos/xQdp-KbIG3s/download?force=true&w=1000"
+              onerror="this.onerror=null;this.src='https://placehold.co/800x860/1E3A8A/FFFFFF?text=EcoRecarga+Santa+Marta+%7C+Refill+Biodegradable';"
+              alt="Envases reutilizables de vidrio y limpieza biodegradable EcoRecarga Santa Marta"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(23, 37, 84, 0.86) 0%, rgba(23, 37, 84, 0.18) 55%, transparent 100%);"></div>
+
+            <!-- Badges superiores -->
+            <div style="position: absolute; top: 1rem; left: 1rem; right: 1rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem;">
+              <span style="background-color: rgba(255,255,255,0.96); color: #172554; font-size: 0.75rem; font-weight: 700; padding: 0.38rem 0.75rem; border-radius: 0.65rem; box-shadow: 0 2px 6px rgba(15,23,42,0.1);">
+                ✓ Insumos con NSO INVIMA
+              </span>
+              <span style="background-color: #1d4ed8; color: #ffffff; font-size: 0.75rem; font-weight: 800; padding: 0.38rem 0.75rem; border-radius: 0.65rem; box-shadow: 0 2px 6px rgba(15,23,42,0.16);">
+                Cero Impuesto al Plástico
+              </span>
+            </div>
+
+            <!-- Tarjeta Inferior -->
+            <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem; background-color: rgba(255, 255, 255, 0.97); border-radius: 1.1rem; padding: 0.95rem; box-shadow: 0 8px 20px rgba(15,23,42,0.16);">
+              <div class="flex items-center" style="gap: 0.85rem;">
+                <img
+                  src="https://unsplash.com/photos/_lufqBP-QuU/download?force=true&w=400"
+                  onerror="this.onerror=null;this.src='https://placehold.co/160x160/0284C7/FFFFFF?text=Bahia+SM';"
+                  alt="Bahía de Taganga y Santa Marta"
+                  style="width: 3.65rem; height: 3.65rem; border-radius: 0.75rem; object-fit: cover; flex-shrink: 0; border: 1px solid #e2e8f0;"
+                />
+                <div>
+                  <span style="display: block; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #0284c7;">Compromiso Costero • ODS 14</span>
+                  <p style="font-size: 0.875rem; font-weight: 700; color: #0f172a; line-height: 1.3; margin-top: 0.15rem;">
+                    Cada hogar samario evita entre 18 y 26 botellas plásticas rígidas al año.
+                  </p>
+                  <span style="display: block; font-size: 0.75rem; font-weight: 500; color: #64748b; margin-top: 0.15rem;">Corredor Mamatoco – Unimagdalena &amp; Ruta Móvil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CATÁLOGO INTERACTIVO A GRANEL                                         -->
+  <!-- ===================================================================== -->
+  <section id="catalogo" style="padding: 4.25rem 0; background-color: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+    <div class="container-main">
+      <!-- Encabezado e Interruptor BYOC -->
+      <div class="flex flex-wrap items-end justify-between" style="gap: 1.5rem; margin-bottom: 2.25rem;">
+        <div>
+          <span class="section-eyebrow">Portafolio Mínimo Viable • Precios COP 2026</span>
+          <h2 class="section-title">Tienda de Recarga a Granel</h2>
+          <p class="section-lead">
+            Elige el volumen exacto que necesitas (desde <strong style="color: #0f172a;">250 ml</strong> hasta <strong style="color: #0f172a;">bidones de 20 L</strong>). Comparamos cada precio contra el promedio de supermercados en Santa Marta para mostrarte tu ahorro real.
+          </p>
+        </div>
+
+        <div style="background-color: #ffffff; border: 1px solid #bfdbfe; border-radius: 1.1rem; padding: 1rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; box-shadow: 0 2px 8px rgba(29, 78, 216, 0.06);">
+          <div>
+            <p style="font-size: 0.9rem; font-weight: 700; color: #172554; display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap;">
+              <span>🧴 Traigo mi propio envase limpio</span>
+              <span style="background-color: #1d4ed8; color: #ffffff; font-size: 0.68rem; font-weight: 800; padding: 0.15rem 0.5rem; border-radius: 999px;">-5 % EXTRA</span>
+            </p>
+            <p style="font-size: 0.78rem; color: #475569; margin-top: 0.2rem;">Activa para aplicar tu incentivo de economía circular</p>
+          </div>
+          <label class="switch-label">
+            <input type="checkbox" id="byoc-toggle" checked onchange="renderCatalog(); updateCartUI();" />
+            <span class="switch-slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Filtros de Categoría -->
+      <div class="flex flex-wrap items-center" style="gap: 0.55rem; margin-bottom: 2rem;" id="category-filters">
+        <button onclick="filterCategory('all')" data-cat="all" class="cat-btn" style="padding: 0.6rem 1.05rem; border-radius: 0.75rem; font-size: 0.85rem; font-weight: 700; background-color: #1d4ed8; color: #ffffff;">
+          Todos los Productos (7)
+        </button>
+        <button onclick="filterCategory('hogar')" data-cat="hogar" class="cat-btn" style="padding: 0.6rem 1.05rem; border-radius: 0.75rem; font-size: 0.85rem; font-weight: 600; background-color: #ffffff; color: #334155; border: 1px solid #e2e8f0;">
+          Ropa y Hogar
+        </button>
+        <button onclick="filterCategory('cocina')" data-cat="cocina" class="cat-btn" style="padding: 0.6rem 1.05rem; border-radius: 0.75rem; font-size: 0.85rem; font-weight: 600; background-color: #ffffff; color: #334155; border: 1px solid #e2e8f0;">
+          Cocina y Desinfección
+        </button>
+        <button onclick="filterCategory('higiene')" data-cat="higiene" class="cat-btn" style="padding: 0.6rem 1.05rem; border-radius: 0.75rem; font-size: 0.85rem; font-weight: 600; background-color: #ffffff; color: #334155; border: 1px solid #e2e8f0;">
+          Higiene Personal
+        </button>
+        <button onclick="filterCategory('b2b')" data-cat="b2b" class="cat-btn" style="padding: 0.6rem 1.05rem; border-radius: 0.75rem; font-size: 0.85rem; font-weight: 600; background-color: #ffffff; color: #334155; border: 1px solid #e2e8f0;">
+          B2B (20 L) y Envases Retornables
+        </button>
+      </div>
+
+      <!-- Cuadrícula de Productos -->
+      <div id="product-grid" class="products-grid"></div>
+
+      <!-- Tarjetas Informativas -->
+      <div class="two-col-grid" style="margin-top: 2.5rem;">
+        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.15rem; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem;">
+          <div style="width: 2.75rem; height: 2.75rem; border-radius: 0.8rem; background-color: #dbeafe; color: #1e3a8a; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔄</div>
+          <div>
+            <h3 style="font-size: 1rem; font-weight: 700; color: #172554;">¿Olvidaste tu envase hoy? Sistema de Envase en Préstamo</h3>
+            <p style="font-size: 0.85rem; color: #475569; margin-top: 0.3rem; line-height: 1.55;">
+              Te entregamos un envase esterilizado con un <strong style="color: #0f172a;">depósito reembolsable de $4.000 COP</strong> (te devolvemos el 100 % cuando lo retornes) o puedes adquirir tu frasco de vidrio/HDPE reutilizable por $6.500 COP.
+            </p>
+          </div>
+        </div>
+        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.15rem; padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem;">
+          <div style="width: 2.75rem; height: 2.75rem; border-radius: 0.8rem; background-color: #e0f2fe; color: #0369a1; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">💳</div>
+          <div>
+            <h3 style="font-size: 1rem; font-weight: 700; color: #172554;">Medios de Pago Híbridos sin Fricción</h3>
+            <p style="font-size: 0.85rem; color: #475569; margin-top: 0.3rem; line-height: 1.55;">
+              Paga exactamente el peso neto dispensado en punto fijo, estación móvil o entrega B2B mediante <strong style="color: #0f172a;">Efectivo, Nequi, Daviplata, Bre-B y Transferencia QR</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PROTOCOLO SANITARIO EN 4 PASOS + ILUSTRACIÓN TÉCNICA                  -->
+  <!-- ===================================================================== -->
+  <section id="protocolo" style="padding: 4.25rem 0; background-color: #ffffff;">
+    <div class="container-main">
+      <div class="text-center" style="max-width: 44rem; margin: 0 auto 3rem auto;">
+        <span class="section-eyebrow" style="color: #0284c7;">Trazabilidad Sanitaria y Transparencia Total</span>
+        <h2 class="section-title">Nuestro Protocolo de Recarga en 4 Pasos</h2>
+        <p style="font-size: 1rem; color: #475569; line-height: 1.65;">
+          Eliminamos la desconfianza del granel informal: operamos con básculas digitales certificadas (resolución 1 g), tanques codificados por color, fichas técnicas TDS/SDS y rotulado térmico impermeable.
+        </p>
+      </div>
+
+      <div class="protocol-grid">
+        <!-- Ilustración Técnica SVG -->
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1.5rem; padding: 1.5rem; box-shadow: 0 2px 8px rgba(15,23,42,0.03);">
+          <div class="flex items-center justify-between" style="margin-bottom: 1rem;">
+            <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #1e3a8a; background-color: #eff6ff; border: 1px solid #bfdbfe; padding: 0.3rem 0.7rem; border-radius: 999px;">Estación EcoRecarga 80 L</span>
+            <span style="font-size: 0.75rem; font-weight: 700; color: #64748b;">Resolución 1 g</span>
+          </div>
+
+          <svg viewBox="0 0 420 310" style="width: 100%; height: auto; border-radius: 1rem; background: linear-gradient(to bottom, #eff6ff, #ffffff); padding: 0.75rem; border: 1px solid #bfdbfe;" role="img" aria-label="Estación dispensadora de 80 litros y báscula digital con tara">
+            <rect x="25" y="165" width="370" height="12" rx="4" fill="#1E3A8A"/>
+            <rect x="35" y="177" width="10" height="115" rx="3" fill="#1D4ED8"/>
+            <rect x="375" y="177" width="10" height="115" rx="3" fill="#1D4ED8"/>
+            <rect x="25" y="285" width="370" height="12" rx="4" fill="#1E3A8A"/>
+
+            <rect x="48" y="38" width="90" height="112" rx="14" fill="#E0F2FE" stroke="#0284C7" stroke-width="3"/>
+            <rect x="52" y="75" width="82" height="71" rx="10" fill="#38BDF8" opacity="0.55"/>
+            <rect x="75" y="26" width="36" height="12" rx="4" fill="#0284C7"/>
+            <text x="93" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0C4A6E">ROPA 80L</text>
+            <text x="93" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#0369A1">Sin Fosfatos</text>
+            <path d="M93 150 v14 h12" stroke="#334155" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+            <rect x="165" y="38" width="90" height="112" rx="14" fill="#EFF6FF" stroke="#2563EB" stroke-width="3"/>
+            <rect x="169" y="65" width="82" height="81" rx="10" fill="#60A5FA" opacity="0.55"/>
+            <rect x="192" y="26" width="36" height="12" rx="4" fill="#2563EB"/>
+            <text x="210" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#172554">LAVALOZA</text>
+            <text x="210" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#1E40AF">Coco &amp; Cítrico</text>
+            <path d="M210 150 v18" stroke="#1E293B" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+            <path d="M210 175 c4 6 6 9 0 13 c-6 -4 -4 -7 0 -13z" fill="#3B82F6"/>
+
+            <rect x="282" y="38" width="90" height="112" rx="14" fill="#DBEAFE" stroke="#1D4ED8" stroke-width="3"/>
+            <rect x="286" y="82" width="82" height="64" rx="10" fill="#93C5FD" opacity="0.65"/>
+            <rect x="309" y="26" width="36" height="12" rx="4" fill="#1D4ED8"/>
+            <text x="327" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#172554">PISOS 80L</text>
+            <text x="327" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#1E3A8A">Amonio 5ª Gen</text>
+            <path d="M327 150 v14 h-12" stroke="#334155" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+            <rect x="145" y="256" width="130" height="28" rx="6" fill="#0F172A"/>
+            <rect x="163" y="262" width="94" height="16" rx="3" fill="#38BDF8"/>
+            <text x="210" y="273" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#0F172A">TARA: 1.000 g</text>
+
+            <rect x="187" y="203" width="46" height="52" rx="9" fill="#F8FAFC" stroke="#1E3A8A" stroke-width="2.5"/>
+            <rect x="190" y="218" width="40" height="34" rx="6" fill="#93C5FD" opacity="0.7"/>
+            <rect x="199" y="191" width="22" height="12" rx="3" fill="#1D4ED8"/>
+            <rect x="194" y="224" width="32" height="18" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+            <text x="210" y="232" text-anchor="middle" font-family="Inter, sans-serif" font-size="5.5" font-weight="700" fill="#1E3A8A">ECORECARGA</text>
+            <text x="210" y="239" text-anchor="middle" font-family="Inter, sans-serif" font-size="5" fill="#475569">LOTE 2026-SM</text>
+          </svg>
+
+          <div style="margin-top: 1rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; color: #334155; background-color: #ffffff; padding: 0.75rem 1rem; border-radius: 0.75rem; border: 1px solid #e2e8f0;">
+            <span><strong>Tarjeta EcoRecarga:</strong> 10 recargas = 500 ml gratis</span>
+            <span style="font-weight: 800; color: #1d4ed8;">+5 % BYOC</span>
+          </div>
+        </div>
+
+        <!-- 4 Pasos -->
+        <div class="two-col-grid">
+          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1.35rem; padding: 1.5rem;">
+            <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: #1d4ed8; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">1</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; margin-bottom: 0.5rem;">Recepción e Inspección Sanitaria</h3>
+            <p style="font-size: 0.875rem; color: #475569; line-height: 1.6;">
+              Verificamos que tu envase esté limpio, seco y libre de residuos incompatibles (nunca reenvasamos en recipientes con restos de cloro o solventes) y aplicamos higienización con alcohol al 70 %.
+            </p>
+          </div>
+
+          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1.35rem; padding: 1.5rem;">
+            <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: #0284c7; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">2</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; margin-bottom: 0.5rem;">Pesaje y Tara Digital (0,000 kg)</h3>
+            <p style="font-size: 0.875rem; color: #475569; line-height: 1.6;">
+              Colocamos tu envase vacío sobre nuestra báscula digital certificada (resolución 1 g) y presionamos <strong style="color: #0f172a;">TARA</strong> para descontar el peso del recipiente: pagas solo por el líquido activo.
+            </p>
+          </div>
+
+          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1.35rem; padding: 1.5rem;">
+            <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: #2563eb; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">3</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; margin-bottom: 0.5rem;">Dispensación Exacta Antigoteo</h3>
+            <p style="font-size: 0.875rem; color: #475569; line-height: 1.6;">
+              Llenamos la cantidad exacta que deseas (desde 250 ml hasta bidones de 20 L) mediante válvulas antigoteo de grado químico/alimenticio sin derrames ni diluciones indebidas.
+            </p>
+          </div>
+
+          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1.35rem; padding: 1.5rem;">
+            <div style="width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; background-color: #1e3a8a; color: #ffffff; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">4</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; margin-bottom: 0.5rem;">Rotulado Térmico y Cobro Justo</h3>
+            <p style="font-size: 0.875rem; color: #475569; line-height: 1.6;">
+              Adherimos una etiqueta térmica impermeable con nombre del producto, lote NSO INVIMA, fecha de recarga, composición y modo de uso. Pagas por Nequi, Daviplata, Bre-B, QR o efectivo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CALCULADORA INTERACTIVA DE AHORRO E IMPACTO AMBIENTAL                 -->
+  <!-- ===================================================================== -->
+  <section id="impacto" style="padding: 4.25rem 0; background-color: #172554; color: #ffffff;">
+    <div class="container-main">
+      <div style="max-width: 44rem; margin-bottom: 2.5rem;">
+        <span class="section-eyebrow" style="color: #93c5fd;">Simulador Interactivo • Economía Circular</span>
+        <h2 class="section-title" style="color: #ffffff;">Calcula cuánto dinero y plástico ahorras al año en Santa Marta</h2>
+        <p style="font-size: 1rem; color: #dbeafe; line-height: 1.65;">
+          Ajusta el consumo mensual de tu hogar, apartamento universitario o establecimiento comercial y descubre tu impacto positivo en los <strong style="color: #ffffff;">ODS 12, 14 y 6</strong>.
+        </p>
+      </div>
+
+      <div class="calc-grid">
+        <!-- Sliders -->
+        <div style="background-color: #1e3a8a; border: 1px solid #2563eb; border-radius: 1.5rem; padding: 1.75rem; display: flex; flex-direction: column; gap: 1.35rem;">
+          <div class="flex flex-wrap" style="gap: 0.5rem;">
+            <button onclick="setCalcPreset(2, 1, 2, 1)" style="padding: 0.5rem 0.85rem; border-radius: 0.7rem; background-color: #1d4ed8; color: #eff6ff; font-size: 0.78rem; font-weight: 700; border: 1px solid #60a5fa;">
+              🎓 Estudiante / Independiente
+            </button>
+            <button onclick="setCalcPreset(5, 3, 4, 2)" style="padding: 0.5rem 0.85rem; border-radius: 0.7rem; background-color: #ffffff; color: #172554; font-size: 0.78rem; font-weight: 800;">
+              🏠 Hogar Samario (Promedio)
+            </button>
+            <button onclick="setCalcPreset(25, 18, 22, 8)" style="padding: 0.5rem 0.85rem; border-radius: 0.7rem; background-color: #1d4ed8; color: #eff6ff; font-size: 0.78rem; font-weight: 700; border: 1px solid #60a5fa;">
+              🏨 Hostal / Restaurante (B2B)
+            </button>
+          </div>
+
+          <div>
+            <div class="flex justify-between" style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">
+              <span>Detergente Líquido Ropa Concentrado</span>
+              <span id="lbl-det" style="color: #7dd3fc; font-weight: 700;">5 Litros / mes</span>
+            </div>
+            <input type="range" id="rng-det" min="0" max="40" value="5" oninput="recalcImpact()" style="width: 100%; accent-color: #38bdf8;" />
+          </div>
+
+          <div>
+            <div class="flex justify-between" style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">
+              <span>Jabón Líquido Lavaloza Desengrasante</span>
+              <span id="lbl-lav" style="color: #7dd3fc; font-weight: 700;">3 Litros / mes</span>
+            </div>
+            <input type="range" id="rng-lav" min="0" max="30" value="3" oninput="recalcImpact()" style="width: 100%; accent-color: #38bdf8;" />
+          </div>
+
+          <div>
+            <div class="flex justify-between" style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">
+              <span>Limpiador Desinfectante Multiusos / Pisos</span>
+              <span id="lbl-pis" style="color: #7dd3fc; font-weight: 700;">4 Litros / mes</span>
+            </div>
+            <input type="range" id="rng-pis" min="0" max="40" value="4" oninput="recalcImpact()" style="width: 100%; accent-color: #38bdf8;" />
+          </div>
+
+          <div>
+            <div class="flex justify-between" style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.4rem;">
+              <span>Jabón de Manos + Suavizante Biodegradable</span>
+              <span id="lbl-man" style="color: #7dd3fc; font-weight: 700;">2 Litros / mes</span>
+            </div>
+            <input type="range" id="rng-man" min="0" max="20" value="2" oninput="recalcImpact()" style="width: 100%; accent-color: #38bdf8;" />
+          </div>
+        </div>
+
+        <!-- Resultados -->
+        <div style="background: linear-gradient(135deg, #1d4ed8, #0369a1); border: 1px solid rgba(255,255,255,0.22); border-radius: 1.5rem; padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; gap: 1.25rem;">
+          <div>
+            <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #bfdbfe;">Tu Impacto Anual Estimado</span>
+            <div style="margin-top: 0.85rem; background-color: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.22); border-radius: 1rem; padding: 1.2rem;">
+              <p style="font-size: 0.8rem; color: #eff6ff;">Ahorro Económico Directo al Año</p>
+              <p id="res-money" style="font-size: 2.1rem; font-weight: 800; color: #ffffff; line-height: 1.15; margin-top: 0.25rem;">$478.800 COP</p>
+              <p id="res-monthly" style="font-size: 0.8rem; color: #dbeafe; margin-top: 0.3rem;">Equivale a $39.900 COP ahorrados cada mes</p>
+            </div>
+
+            <div class="two-col-grid" style="margin-top: 0.9rem; gap: 0.85rem;">
+              <div style="background-color: rgba(255,255,255,0.14); border-radius: 0.9rem; padding: 0.95rem;">
+                <p style="font-size: 0.78rem; color: #dbeafe;">Botellas Evitadas</p>
+                <p id="res-bottles" style="font-size: 1.55rem; font-weight: 800; color: #ffffff; margin-top: 0.2rem;">168 uds</p>
+                <p style="font-size: 0.7rem; color: #bfdbfe;">Envases HDPE/PET de 1 L</p>
+              </div>
+              <div style="background-color: rgba(255,255,255,0.14); border-radius: 0.9rem; padding: 0.95rem;">
+                <p style="font-size: 0.78rem; color: #dbeafe;">Plástico Evitado</p>
+                <p id="res-plastic" style="font-size: 1.55rem; font-weight: 800; color: #7dd3fc; margin-top: 0.2rem;">8,4 kg</p>
+                <p style="font-size: 0.7rem; color: #bfdbfe;">Fuera de ríos y bahía</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">
+            <p style="font-size: 0.78rem; color: #dbeafe; margin-bottom: 0.55rem;">Alineación directa con la Agenda 2030:</p>
+            <div class="flex flex-wrap" style="gap: 0.45rem; font-size: 0.72rem; font-weight: 800;">
+              <span style="padding: 0.3rem 0.65rem; border-radius: 0.5rem; background-color: #ffffff; color: #172554;">ODS 12 Consumo Responsable</span>
+              <span style="padding: 0.3rem 0.65rem; border-radius: 0.5rem; background-color: #38bdf8; color: #0f172a;">ODS 14 Vida Submarina</span>
+              <span style="padding: 0.3rem 0.65rem; border-radius: 0.5rem; background-color: #bae6fd; color: #0f172a;">ODS 6 Agua Limpia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- SUSCRIPCIÓN B2B Y BIDONES RETORNABLES DE 20 L                         -->
+  <!-- ===================================================================== -->
+  <section id="b2b" style="padding: 4.25rem 0; background-color: #ffffff; border-bottom: 1px solid #e2e8f0;">
+    <div class="container-main">
+      <div class="b2b-grid">
+        <!-- Info B2B -->
+        <div style="display: flex; flex-direction: column; gap: 1.15rem;">
+          <div>
+            <span style="display: inline-block; padding: 0.32rem 0.85rem; border-radius: 999px; background-color: #eff6ff; color: #1e3a8a; border: 1px solid #bfdbfe; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;">
+              Línea Institucional B2B • Bidones Retornables de 20 L
+            </span>
+          </div>
+
+          <h2 class="section-title">Abastecimiento sostenible para Hostales, Eco-Lodges y Restaurantes</h2>
+
+          <p style="font-size: 0.98rem; color: #475569; line-height: 1.65;">
+            Atendemos establecimientos turísticos y gastronómicos en el <strong style="color: #0f172a;">Centro Histórico, El Rodadero, Taganga y corredor Minca</strong> con entregas semanales o quincenales en bidones retornables de 20 litros.
+          </p>
+
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.9rem; color: #334155;">
+            <li class="flex items-start" style="gap: 0.65rem;">
+              <span style="width: 1.35rem; height: 1.35rem; border-radius: 50%; background-color: #dbeafe; color: #1d4ed8; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem; flex-shrink: 0; margin-top: 0.15rem;">✓</span>
+              <span><strong style="color: #0f172a;">Tarifa preferencial B2B de $6.200 COP/L</strong> ($124.000 COP por bidón de 20 L), logrando un <strong style="color: #1d4ed8;">34,7 % de ahorro</strong> frente a compras tradicionales.</span>
+            </li>
+            <li class="flex items-start" style="gap: 0.65rem;">
+              <span style="width: 1.35rem; height: 1.35rem; border-radius: 50%; background-color: #dbeafe; color: #1d4ed8; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem; flex-shrink: 0; margin-top: 0.15rem;">✓</span>
+              <span><strong style="color: #0f172a;">Logística inversa sin costo adicional:</strong> entregamos el bidón lleno y recolectamos el vacío para su esterilización certificada.</span>
+            </li>
+            <li class="flex items-start" style="gap: 0.65rem;">
+              <span style="width: 1.35rem; height: 1.35rem; border-radius: 50%; background-color: #dbeafe; color: #1d4ed8; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.75rem; flex-shrink: 0; margin-top: 0.15rem;">✓</span>
+              <span><strong style="color: #0f172a;">Sello «Comercio Aliado Cero Plástico Santa Marta»</strong> + carpeta con fichas técnicas (TDS), hojas de seguridad (SDS) y NSO INVIMA.</span>
+            </li>
+          </ul>
+
+          <div style="padding-top: 0.35rem;">
+            <button onclick="addPresetB2B()" style="background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 0.9rem; padding: 0.85rem 1.45rem; border-radius: 0.85rem; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);">
+              + Agregar Bidón B2B 20 L ($124.000) a Mi Pedido
+            </button>
+          </div>
+        </div>
+
+        <!-- Formulario B2B -->
+        <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1.5rem; padding: 1.75rem;">
+          <div class="flex items-center" style="gap: 1rem; margin-bottom: 1.25rem;">
+            <img
+              src="https://unsplash.com/photos/n5qirFAe6rQ/download?force=true&w=600"
+              onerror="this.onerror=null;this.src='https://placehold.co/240x240/1D4ED8/FFFFFF?text=Plan+B2B';"
+              alt="Limpieza ecológica para hostales y restaurantes"
+              style="width: 4.75rem; height: 4.75rem; border-radius: 1rem; object-fit: cover; border: 2px solid #ffffff; box-shadow: 0 2px 8px rgba(15,23,42,0.08); flex-shrink: 0;"
+            />
+            <div>
+              <h3 style="font-size: 1.125rem; font-weight: 700; color: #172554; line-height: 1.3;">Solicita Cotización o Carta de Intención B2B</h3>
+              <p style="font-size: 0.8rem; color: #475569; margin-top: 0.2rem;">Respuesta inmediata en ruta semanal Centro Histórico, Taganga y Minca.</p>
+            </div>
+          </div>
+
+          <form onsubmit="submitB2BForm(event)" style="display: flex; flex-direction: column; gap: 0.95rem;">
+            <div class="two-col-grid" style="gap: 0.85rem;">
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; color: #334155; margin-bottom: 0.3rem;">Nombre del Establecimiento</label>
+                <input type="text" id="b2b-biz" required placeholder="Ej. EcoHostal Bahía Azul" class="form-input" />
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; color: #334155; margin-bottom: 0.3rem;">Sector / Zona en Santa Marta</label>
+                <select id="b2b-zone" class="form-input">
+                  <option>Centro Histórico</option>
+                  <option>El Rodadero / Gaira</option>
+                  <option>Taganga</option>
+                  <option>Corredor Minca</option>
+                  <option>Mamatoco / Troncal / Unimagdalena</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="two-col-grid" style="gap: 0.85rem;">
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; color: #334155; margin-bottom: 0.3rem;">Consumo Estimado Mensual</label>
+                <select id="b2b-vol" class="form-input">
+                  <option>2 Bidones (40 L/mes — $248.000 COP)</option>
+                  <option>3 Bidones (60 L/mes — $372.000 COP)</option>
+                  <option>5 Bidones (100 L/mes — $620.000 COP)</option>
+                </select>
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.78rem; font-weight: 700; color: #334155; margin-bottom: 0.3rem;">WhatsApp de Contacto</label>
+                <input type="tel" id="b2b-phone" required placeholder="Ej. 300 123 4567" class="form-input" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 0.25rem;">
+              Agendar Visita Técnica y Muestra Gratuita (1 L)
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PUNTOS EN SANTA MARTA, RUTA MÓVIL Y RESPALDO INSTITUCIONAL            -->
+  <!-- ===================================================================== -->
+  <section id="ubicacion" style="padding: 4.25rem 0; background-color: #f8fafc;">
+    <div class="container-main">
+      <div class="flex flex-wrap items-end justify-between" style="gap: 1rem; margin-bottom: 2.25rem;">
+        <div>
+          <span class="section-eyebrow">Despliegue Territorial • Magdalena</span>
+          <h2 class="section-title" style="margin-bottom: 0;">Dónde Recargar en Santa Marta</h2>
+        </div>
+        <button onclick="openCanvasModal('canvas')" class="btn-sm-emerald">
+          <span>📊 Inspeccionar Modelo Canvas y Plan Financiero</span>
+        </button>
+      </div>
+
+      <div class="three-col-grid">
+        <!-- Punto 1 -->
+        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.35rem; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; height: 11rem; background-color: #dbeafe;">
+            <img
+              src="https://unsplash.com/photos/dnstpPqCBbw/download?force=true&w=800"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x360/1D4ED8/FFFFFF?text=Punto+Fijo+Mamatoco';"
+              alt="Punto fijo Mamatoco Unimagdalena"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background-color: #1d4ed8; color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 0.5rem;">Punto Fijo Piloto</span>
+          </div>
+          <div style="padding: 1.35rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; margin-bottom: 0.5rem;">Corredor Mamatoco – Unimagdalena</h3>
+              <p style="font-size: 0.875rem; color: #475569; line-height: 1.6;">
+                Ubicación estratégica junto a la Troncal del Caribe y alrededores de la <strong style="color: #0f172a;">Universidad del Magdalena</strong>, atendiendo hogares de Mamatoco, Bastidas, Bavaria, El Jardín y comunidad universitaria.
+              </p>
+            </div>
+            <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid #f1f5f9; font-size: 0.78rem; font-weight: 700; color: #1d4ed8;">
+              🕒 Lunes a Sábado: 8:00 a.m. – 6:30 p.m.
+            </div>
+          </div>
+        </div>
+
+        <!-- Punto 2 -->
+        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.35rem; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; height: 11rem; background-color: #e0f2fe;">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Marta_Bahia.jpg?width=800"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x360/0284C7/FFFFFF?text=Estacion+Movil+Santa+Marta';"
+              alt="Bahía de Santa Marta y mercados ecológicos"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background-color: #0284c7; color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 0.5rem;">Estación Móvil Itinerante</span>
+          </div>
+          <div style="padding: 1.35rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; margin-bottom: 0.5rem;">Mercados Verdes: Parque de los Novios y Minca</h3>
+              <p style="font-size: 0.875rem; color: #475569; line-height: 1.6;">
+                Nuestro triciclo modular desmontable lleva las 6 líneas biodegradables a ferias ecológicas, mercados campesinos y jornadas barriales de educación ambiental.
+              </p>
+            </div>
+            <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid #f1f5f9; font-size: 0.78rem; font-weight: 700; color: #0284c7;">
+              🗓️ Sábados y Domingos: 8:30 a.m. – 2:00 p.m.
+            </div>
+          </div>
+        </div>
+
+        <!-- Punto 3 -->
+        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.35rem; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; height: 11rem; background-color: #dbeafe;">
+            <img
+              src="https://unsplash.com/photos/wW5YekBQq-w/download?force=true&w=800"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x360/1E3A8A/FFFFFF?text=Alianza+Recicladores';"
+              alt="Alianza con recicladores de oficio Santa Marta"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background-color: #1e3a8a; color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 0.5rem;">Economía Circular Inclusiva</span>
+          </div>
+          <div style="padding: 1.35rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; margin-bottom: 0.5rem;">Alianza con Recicladores de Oficio</h3>
+              <p style="font-size: 0.875rem; color: #475569; line-height: 1.6;">
+                Articulación directa con asociaciones de recicladores de Santa Marta para recuperar, clasificar y esterilizar envases HDPE y vidrio aptos para reincorporación circular.
+              </p>
+            </div>
+            <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid #f1f5f9; font-size: 0.78rem; font-weight: 700; color: #1e3a8a;">
+              ⚖️ Marco Ley 2069 de 2020 y CONPES 4011
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner Equipo Fundador -->
+      <div style="margin-top: 2.5rem; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.5rem; padding: 1.75rem;">
+        <div class="b2b-grid" style="gap: 1.5rem;">
+          <div>
+            <span class="section-eyebrow">Respaldo Institucional y Equipo Fundador</span>
+            <h3 style="font-size: 1.4rem; font-weight: 800; color: #172554; margin-bottom: 0.6rem;">Emprendimiento Verde Nacido en la Universidad del Magdalena</h3>
+            <p style="font-size: 0.9rem; color: #475569; line-height: 1.65;">
+              Proyecto formulado y ejecutado por <strong style="color: #0f172a;">Juan Manuel Cataño Agudelo</strong> (Dirección Operativa, Trazabilidad POS, Proveedores y B2B) y <strong style="color: #0f172a;">Kevin Parra</strong> (Gestión Comercial, Calidad Sanitaria, Marketing y Alianzas Comunitarias), bajo la orientación de la Cátedra <em>Desarrollo Sostenible y Emprendimiento</em> (Docente: MsC. Douglas Vera Peláez), articulado con la <strong style="color: #0f172a;">Ley 2069 de 2020</strong> y el <strong style="color: #0f172a;">CONPES 4011</strong>.
+            </p>
+          </div>
+          <div class="flex flex-col" style="gap: 0.65rem;">
+            <button onclick="openCanvasModal('canvas')" class="btn-primary" style="width: 100%;">
+              Ver Modelo Canvas (9 Bloques)
+            </button>
+            <button onclick="openCanvasModal('finanzas')" class="btn-sm-emerald" style="width: 100%; justify-content: center; padding: 0.85rem;">
+              Ver Viabilidad Financiera y Punto de Equilibrio
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PIE DE PÁGINA (FOOTER)                                                -->
+  <!-- ===================================================================== -->
+  <footer style="background-color: #172554; color: #dbeafe; padding: 3.5rem 0 2rem 0;">
+    <div class="container-main">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; padding-bottom: 2.25rem; border-bottom: 1px solid #1e3a8a;">
+        <div>
+          <div class="flex items-center" style="gap: 0.6rem; margin-bottom: 0.85rem;">
+            <span style="width: 2.1rem; height: 2.1rem; border-radius: 0.6rem; background-color: #1d4ed8; display: flex; align-items: center; justify-content: center; color: #ffffff;">♻️</span>
+            <span style="font-size: 1.2rem; font-weight: 800; color: #ffffff;">EcoRecarga Santa Marta</span>
+          </div>
+          <p style="font-size: 0.85rem; color: #bfdbfe; line-height: 1.6; margin-bottom: 0.75rem;">
+            Comercio minorista sostenible y economía circular a granel para productos de limpieza e higiene biodegradables («Trae tu propio envase»).
+          </p>
+          <p style="font-size: 0.78rem; font-weight: 600; color: #93c5fd;">
+            Socios Fundadores: Juan Manuel Cataño Agudelo y Kevin Parra • Santa Marta D.T.C.H.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff; margin-bottom: 0.75rem;">Navegación</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+            <li><a href="#catalogo">Catálogo a Granel</a></li>
+            <li><a href="#protocolo">Protocolo Sanitario 4 Pasos</a></li>
+            <li><a href="#impacto">Calculadora de Ahorro</a></li>
+            <li><a href="#b2b">Planes B2B (20 L)</a></li>
+            <li><button onclick="openCanvasModal('canvas')" style="color: #dbeafe; font-size: 0.85rem;">Dossier Canvas &amp; Finanzas</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff; margin-bottom: 0.75rem;">Normatividad y Calidad</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.8rem; color: #bfdbfe;">
+            <li>• Resolución 0689 de 2016 (Biodegradabilidad)</li>
+            <li>• Notificación Sanitaria Obligatoria (NSO INVIMA)</li>
+            <li>• Ley 2069 de 2020 (Emprendimiento Verde)</li>
+            <li>• Política Nacional CONPES 4011</li>
+            <li>• ODS 12, ODS 14, ODS 6, ODS 8 y ODS 13</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between" style="gap: 0.75rem; padding-top: 1.5rem; font-size: 0.78rem; color: #93c5fd;">
+        <p>© 2026 EcoRecarga Santa Marta. Todos los derechos reservados.</p>
+        <p>Universidad del Magdalena • Cátedra Desarrollo Sostenible y Emprendimiento</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL LATERAL: CANASTA DE RECARGA                                     -->
+  <!-- ===================================================================== -->
+  <div id="cart-backdrop" onclick="toggleCart(false)" class="overlay-backdrop hidden"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div style="padding: 1.25rem; background-color: #1e3a8a; color: #ffffff; display: flex; align-items: center; justify-content: space-between;">
+      <div>
+        <h3 style="font-size: 1.125rem; font-weight: 800; color: #ffffff;">Tu Canasta de Recarga</h3>
+        <p style="font-size: 0.75rem; color: #bfdbfe;">Pesaje exacto • Cero plástico de un solo uso</p>
+      </div>
+      <button onclick="toggleCart(false)" style="padding: 0.45rem; border-radius: 0.65rem; background-color: rgba(255,255,255,0.14); color: #ffffff;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="cart-byoc-banner" style="padding: 0.65rem 1.25rem; background-color: #eff6ff; border-bottom: 1px solid #bfdbfe; font-size: 0.78rem; font-weight: 600; color: #1e3a8a; display: flex; align-items: center; justify-content: space-between;"></div>
+
+    <div id="cart-items" style="flex: 1; overflow-y: auto; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;"></div>
+
+    <div style="padding: 1.25rem; background-color: #f8fafc; border-top: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 0.85rem;">
+      <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.875rem;">
+        <div class="flex justify-between" style="color: #475569;">
+          <span>Ahorro total vs. supermercado:</span>
+          <span id="cart-saved" style="font-weight: 700; color: #1d4ed8;">$0 COP</span>
+        </div>
+        <div class="flex justify-between" style="color: #475569;">
+          <span>Botellas plásticas evitadas:</span>
+          <span id="cart-bottles" style="font-weight: 700; color: #0284c7;">0 botellas</span>
+        </div>
+        <div class="flex justify-between" style="font-size: 1rem; font-weight: 800; color: #172554; padding-top: 0.45rem; border-top: 1px solid #e2e8f0;">
+          <span>Total a Pagar:</span>
+          <span id="cart-total">$0 COP</span>
+        </div>
+      </div>
+
+      <div class="two-col-grid" style="gap: 0.5rem;">
+        <select id="cart-delivery" class="form-input" style="font-size: 0.78rem; font-weight: 600;">
+          <option>Retiro Punto Mamatoco</option>
+          <option>Feria Parque de los Novios</option>
+          <option>Ruta Domicilio / B2B SM</option>
+        </select>
+        <select id="cart-payment" class="form-input" style="font-size: 0.78rem; font-weight: 600;">
+          <option>Pago con Nequi / QR</option>
+          <option>Pago con Daviplata</option>
+          <option>Transferencia Bre-B</option>
+          <option>Efectivo en Punto</option>
+        </select>
+      </div>
+
+      <button onclick="checkoutOrder()" class="btn-primary" style="width: 100%;">
+        Confirmar Pedido de Recarga
+      </button>
+    </div>
+  </aside>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL EJECUTIVO: MODELO CANVAS, MAPA DE EMPATÍA Y FINANZAS            -->
+  <!-- ===================================================================== -->
+  <div id="canvas-modal" class="modal-center hidden">
+    <div style="background-color: #ffffff; width: 100%; max-width: 72rem; max-height: 90vh; border-radius: 1.5rem; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 25px 50px rgba(15,23,42,0.3);">
+      <div style="padding: 1.15rem 1.5rem; background-color: #1e3a8a; color: #ffffff; display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+        <div>
+          <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #93c5fd;">Universidad del Magdalena • Cátedra Desarrollo Sostenible y Emprendimiento</span>
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: #ffffff;">Dossier Ejecutivo: EcoRecarga Santa Marta</h3>
+        </div>
+        <button onclick="closeCanvasModal()" style="padding: 0.45rem; border-radius: 0.65rem; background-color: rgba(255,255,255,0.15); color: #ffffff;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <div style="padding: 0.75rem 1.5rem 0 1.5rem; background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <button onclick="switchModalTab('canvas')" id="tab-btn-canvas" style="padding: 0.6rem 1rem; border-radius: 0.7rem 0.7rem 0 0; font-size: 0.82rem; font-weight: 700; background-color: #ffffff; color: #1e3a8a; border: 1px solid #e2e8f0; border-bottom: none;">
+          1. Lienzo Modelo Canvas (9 Bloques)
+        </button>
+        <button onclick="switchModalTab('empatia')" id="tab-btn-empatia" style="padding: 0.6rem 1rem; border-radius: 0.7rem 0.7rem 0 0; font-size: 0.82rem; font-weight: 600; color: #475569;">
+          2. Mapa de Empatía del Cliente
+        </button>
+        <button onclick="switchModalTab('finanzas')" id="tab-btn-finanzas" style="padding: 0.6rem 1rem; border-radius: 0.7rem 0.7rem 0 0; font-size: 0.82rem; font-weight: 600; color: #475569;">
+          3. Modelo Financiero y Punto de Equilibrio
+        </button>
+      </div>
+
+      <div style="padding: 1.5rem; overflow-y: auto; flex: 1;">
+        <!-- Pestaña 1: Canvas -->
+        <div id="modal-panel-canvas" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.85rem; font-size: 0.8rem;">
+            <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1rem;">
+              <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.5rem;">8. Asociaciones Clave</h4>
+              <p style="color: #475569; line-height: 1.55;">• Fabricantes químicos biodegradables del Caribe (NSO INVIMA y Res. 0689/2016).<br/>• Asociaciones de recicladores de Santa Marta.<br/>• Hostales, eco-lodges y cafés (B2B).<br/>• Mercados verdes y Unimagdalena / Fondo Emprender.</p>
+            </div>
+            <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1rem; padding: 1rem;">
+              <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.5rem;">6 y 7. Recursos y Actividades Clave</h4>
+              <p style="color: #334155; line-height: 1.55;">• Local 18 m², 6 tanques de 80 L, báscula certificada (1 g), impresora térmica y triciclo móvil.<br/>• Dispensación exacta por tara digital, rotulado sanitario y logística inversa de bidones 20 L.<br/>• Equipo: Juan Manuel Cataño A. y Kevin Parra.</p>
+            </div>
+            <div style="background-color: #1e3a8a; color: #ffffff; border-radius: 1rem; padding: 1rem;">
+              <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #7dd3fc; margin-bottom: 0.5rem;">2. Propuesta de Valor</h4>
+              <p style="color: #eff6ff; line-height: 1.55;">• <strong>Ahorro real del 25 % al 35 %</strong> eliminando el envase plástico virgen.<br/>• Compra fraccionada desde 250 ml o $2.000 COP.<br/>• Fórmulas 100 % biodegradables libres de fosfatos.<br/>• Evita 18–26 botellas plásticas por hogar/año (ODS 12, 14 y 6).</p>
+            </div>
+            <div style="background-color: #f0f9ff; border: 1px solid #bae6fd; border-radius: 1rem; padding: 1rem;">
+              <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #0369a1; margin-bottom: 0.5rem;">3 y 4. Canales y Relación</h4>
+              <p style="color: #334155; line-height: 1.55;">• Punto fijo Mamatoco – Unimagdalena + Estación móvil fines de semana.<br/>• «Tarjeta EcoRecarga» (10 recargas = 500 ml gratis) + 5 % BYOC.<br/>• Pedidos programados WhatsApp Business y ruta B2B.</p>
+            </div>
+            <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1rem;">
+              <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.5rem;">1. Segmentos de Clientes</h4>
+              <p style="color: #475569; line-height: 1.55;">• <strong>45 % Hogares urbanos (estratos 2–4):</strong> Mamatoco, Bastidas, Bavaria, El Jardín, Pescaíto.<br/>• <strong>35 % Comercios B2B:</strong> Hostales, eco-lodges y restaurantes.<br/>• <strong>20 % Estudiantes:</strong> Entorno Unimagdalena.</p>
+            </div>
+          </div>
+
+          <div class="two-col-grid" style="font-size: 0.82rem;">
+            <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 1rem; padding: 1rem;">
+              <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #1e3a8a; margin-bottom: 0.35rem;">9. Estructura de Costos</h4>
+              <p style="color: #334155; line-height: 1.55;"><strong>Variables (55,1 %):</strong> Insumos concentrados ($2.800–$4.600/L) y envases. <strong>Fijos ($3.650.000/mes):</strong> Arriendo ($1,1M), servicios ($220k), apoyo operativo/SS ($1,65M), sanitización/etiquetas ($380k) y logística ($300k).</p>
+            </div>
+            <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1rem; padding: 1rem;">
+              <h4 style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: #1d4ed8; margin-bottom: 0.35rem;">5. Fuentes de Ingresos</h4>
+              <p style="color: #334155; line-height: 1.55;"><strong>Venta directa B2C (60 %):</strong> $5.400–$8.500/L. <strong>Suscripción B2B bidón 20 L (28 %):</strong> $6.200/L. <strong>Envases reutilizables (12 %):</strong> $6.500/ud. <strong>Margen Bruto Ponderado: 44,9 %.</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pestaña 2: Empatía -->
+        <div id="modal-panel-empatia" class="hidden">
+          <div class="two-col-grid" style="font-size: 0.85rem;">
+            <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1rem; padding: 1.15rem;">
+              <h4 style="font-weight: 800; color: #172554; margin-bottom: 0.45rem;">1. ¿Qué piensa y qué siente?</h4>
+              <p style="color: #334155; line-height: 1.6;">• Preocupación por el alza en el costo del mercado y gastos fijos.<br/>• Culpa al botar decenas de botellas plásticas gruesas en una ciudad costera.<br/>• Cree que lo ecológico es costoso, pero aspira a limpieza impecable y buen aroma.</p>
+            </div>
+            <div style="background-color: #f0f9ff; border: 1px solid #bae6fd; border-radius: 1rem; padding: 1.15rem;">
+              <h4 style="font-weight: 800; color: #0369a1; margin-bottom: 0.45rem;">2. ¿Qué oye?</h4>
+              <p style="color: #334155; line-height: 1.6;">• Vecinos y familiares: «El detergente de marca subió mucho, hay que buscar dónde rinda más».<br/>• Alertas locales en Santa Marta por plásticos en playas y ríos.<br/>• Turistas que valoran alojamientos con prácticas reales de cero plástico.</p>
+            </div>
+            <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.15rem;">
+              <h4 style="font-weight: 800; color: #0f172a; margin-bottom: 0.45rem;">3. ¿Qué ve?</h4>
+              <p style="color: #334155; line-height: 1.6;">• Góndolas saturadas de botellas plásticas de un solo uso a precios elevados.<br/>• Tiendas hard discount (D1, Ara) sin opciones de recarga ni reutilización.<br/>• Escasez de puntos formales a granel con báscula certificada y rotulado sanitario.</p>
+            </div>
+            <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1rem; padding: 1.15rem;">
+              <h4 style="font-weight: 800; color: #1e3a8a; margin-bottom: 0.45rem;">4. ¿Qué dice y hace?</h4>
+              <p style="color: #334155; line-height: 1.6;">• Guarda botellas vacías «por si sirven», pero termina botándolas.<br/>• Compara precios por mililitro y busca compras fraccionadas según su flujo semanal.<br/>• Cuando comprueba que limpia bien y ahorra ~28 %, adopta el hábito y lo recomienda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pestaña 3: Finanzas -->
+        <div id="modal-panel-finanzas" class="hidden" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div class="stats-grid">
+            <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1rem; padding: 1rem;">
+              <p style="font-size: 0.75rem; color: #475569;">Inversión Inicial Total</p>
+              <p style="font-size: 1.3rem; font-weight: 800; color: #1e3a8a;">$16.200.000</p>
+              <p style="font-size: 0.7rem; color: #64748b;">CAPEX + Capital Trabajo</p>
+            </div>
+            <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 1rem; padding: 1rem;">
+              <p style="font-size: 0.75rem; color: #475569;">Costos Fijos Mensuales</p>
+              <p style="font-size: 1.3rem; font-weight: 800; color: #172554;">$3.650.000</p>
+              <p style="font-size: 0.7rem; color: #64748b;">Arriendo, personal y ruta</p>
+            </div>
+            <div style="background-color: #f0f9ff; border: 1px solid #bae6fd; border-radius: 1rem; padding: 1rem;">
+              <p style="font-size: 0.75rem; color: #475569;">Margen Bruto Ponderado</p>
+              <p style="font-size: 1.3rem; font-weight: 800; color: #0369a1;">44,9 %</p>
+              <p style="font-size: 0.7rem; color: #64748b;">Mezcla B2C + B2B</p>
+            </div>
+            <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1rem; padding: 1rem;">
+              <p style="font-size: 0.75rem; color: #475569;">Punto de Equilibrio</p>
+              <p style="font-size: 1.3rem; font-weight: 800; color: #1d4ed8;">$8.124.145</p>
+              <p style="font-size: 0.7rem; color: #64748b;">~1.154 L/mes (~38,5 L/día)</p>
+            </div>
+          </div>
+
+          <div style="overflow-x: auto; border: 1px solid #e2e8f0; border-radius: 1rem;">
+            <table>
+              <thead>
+                <tr style="background-color: #1e3a8a; color: #ffffff;">
+                  <th class="text-left">Línea / Producto</th>
+                  <th class="text-right">Costo Granel</th>
+                  <th class="text-right">Precio Venta</th>
+                  <th class="text-right">Ref. Superm.</th>
+                  <th class="text-center">Ahorro Cliente</th>
+                  <th class="text-center">Margen Bruto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Detergente Líquido Ropa Concentrado (1 L)</strong></td><td class="text-right">$4.600</td><td class="text-right" style="font-weight:700; color:#1d4ed8;">$8.500</td><td class="text-right" style="color:#64748b;">$11.500</td><td class="text-center" style="font-weight:700; color:#2563eb;">26,1 %</td><td class="text-center">45,9 %</td></tr>
+                <tr style="background-color:#f8fafc;"><td><strong>Jabón Líquido Lavaloza Desengrasante (1 L)</strong></td><td class="text-right">$3.900</td><td class="text-right" style="font-weight:700; color:#1d4ed8;">$7.200</td><td class="text-right" style="color:#64748b;">$9.800</td><td class="text-center" style="font-weight:700; color:#2563eb;">26,5 %</td><td class="text-center">45,8 %</td></tr>
+                <tr><td><strong>Limpiador Desinfectante Multiusos / Pisos (1 L)</strong></td><td class="text-right">$2.800</td><td class="text-right" style="font-weight:700; color:#1d4ed8;">$5.400</td><td class="text-right" style="color:#64748b;">$7.500</td><td class="text-center" style="font-weight:700; color:#2563eb;">28,0 %</td><td class="text-center">48,1 %</td></tr>
+                <tr style="background-color:#f8fafc;"><td><strong>Jabón Líquido para Manos con Glicerina (1 L)</strong></td><td class="text-right">$4.400</td><td class="text-right" style="font-weight:700; color:#1d4ed8;">$8.200</td><td class="text-right" style="color:#64748b;">$11.200</td><td class="text-center" style="font-weight:700; color:#2563eb;">26,8 %</td><td class="text-center">46,3 %</td></tr>
+                <tr><td><strong>Suavizante Textil Biodegradable (1 L)</strong></td><td class="text-right">$3.600</td><td class="text-right" style="font-weight:700; color:#1d4ed8;">$6.800</td><td class="text-right" style="color:#64748b;">$9.200</td><td class="text-center" style="font-weight:700; color:#2563eb;">26,1 %</td><td class="text-center">47,1 %</td></tr>
+                <tr style="background-color:#f8fafc;"><td><strong>Plan B2B Hostales/Restaurantes (L en Bidón 20 L)</strong></td><td class="text-right">$3.750</td><td class="text-right" style="font-weight:700; color:#0284c7;">$6.200</td><td class="text-right" style="color:#64748b;">$9.500</td><td class="text-center" style="font-weight:700; color:#2563eb;">34,7 %</td><td class="text-center">39,5 %</td></tr>
+                <tr><td><strong>Envase Reutilizable (Vidrio 1 L / Garrafa HDPE 3,8 L)</strong></td><td class="text-right">$3.800</td><td class="text-right" style="font-weight:700; color:#1e3a8a;">$6.500</td><td class="text-right" style="color:#64748b;">$9.000</td><td class="text-center" style="font-weight:700; color:#2563eb;">27,8 %</td><td class="text-center">41,5 %</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL DE CONFIRMACIÓN Y TOAST                                         -->
+  <!-- ===================================================================== -->
+  <div id="receipt-modal" class="modal-center hidden">
+    <div style="background-color: #ffffff; width: 100%; max-width: 26rem; border-radius: 1.5rem; padding: 1.75rem; text-align: center; box-shadow: 0 25px 50px rgba(15,23,42,0.3); display: flex; flex-direction: column; gap: 1rem;">
+      <div style="width: 3.5rem; height: 3.5rem; border-radius: 1rem; background-color: #dbeafe; color: #1d4ed8; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 1.5rem; font-weight: 800;">✓</div>
+      <h3 id="receipt-title" style="font-size: 1.25rem; font-weight: 800; color: #172554;">¡Orden Registrada!</h3>
+      <p id="receipt-body" style="font-size: 0.875rem; color: #475569; line-height: 1.6;"></p>
+      <div id="receipt-summary" style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1rem; padding: 0.95rem; text-align: left; font-size: 0.8rem; color: #172554; line-height: 1.65;"></div>
+      <button onclick="closeReceiptModal()" class="btn-primary" style="width: 100%;">
+        Listo, continuar explorando
+      </button>
+    </div>
+  </div>
+
+  <div id="toast-banner" class="toast-box hidden">
+    <span style="color: #38bdf8; font-weight: 800;">✓</span>
+    <span id="toast-msg">Producto agregado</span>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- LÓGICA DE APLICACIÓN                                                  -->
+  <!-- ===================================================================== -->
+  <script>
+    const PRODUCTS = [
+      {
+        id: 'detergente-ropa',
+        name: 'Detergente Líquido Ropa Concentrado',
+        category: 'hogar',
+        badge: 'Más Vendido • Libre de Fosfatos',
+        description: 'Fórmula enzimática biodegradable de alto rendimiento para lavado a mano y lavadora (50 ml por carga). Cuida fibras y protege los ríos de Santa Marta.',
+        pricePerL: 8500,
+        supermarketPerL: 11500,
+        isContainer: false,
+        sizes: [
+          { label: '250 ml', mult: 0.25 },
+          { label: '500 ml', mult: 0.5 },
+          { label: '1 Litro', mult: 1 },
+          { label: '3,8 L (Galón)', mult: 3.8 }
+        ],
+        img: 'https://unsplash.com/photos/xQdp-KbIG3s/download?force=true&w=800',
+        fallback: 'https://placehold.co/600x420/1E3A8A/FFFFFF?text=Detergente+Ropa+Biodegradable'
+      },
+      {
+        id: 'lavaloza-citrico',
+        name: 'Jabón Líquido Lavaloza Desengrasante',
+        category: 'cocina',
+        badge: 'Extracto Cítrico & Coco',
+        description: 'Tensioactivos vegetales de coco y aceite esencial cítrico. Corta grasa difícil con rápido enjuague y suavidad dermatológica para tus manos.',
+        pricePerL: 7200,
+        supermarketPerL: 9800,
+        isContainer: false,
+        sizes: [
+          { label: '250 ml', mult: 0.25 },
+          { label: '500 ml', mult: 0.5 },
+          { label: '1 Litro', mult: 1 },
+          { label: '3,8 L (Galón)', mult: 3.8 }
+        ],
+        img: 'https://unsplash.com/photos/n5qirFAe6rQ/download?force=true&w=800',
+        fallback: 'https://placehold.co/600x420/0284C7/FFFFFF?text=Lavaloza+Desengrasante+Citrico'
+      },
+      {
+        id: 'limpiapisos-multiusos',
+        name: 'Limpiador Desinfectante Multiusos / Pisos',
+        category: 'cocina',
+        badge: 'Amonio 5ª Gen • Eucalipto & Lavanda',
+        description: 'Desinfección profunda de pisos, baños y superficies de cocina con amonio cuaternario biodegradable y aceites esenciales naturales.',
+        pricePerL: 5400,
+        supermarketPerL: 7500,
+        isContainer: false,
+        sizes: [
+          { label: '500 ml', mult: 0.5 },
+          { label: '1 Litro', mult: 1 },
+          { label: '3,8 L (Galón)', mult: 3.8 }
+        ],
+        img: 'https://unsplash.com/photos/dnstpPqCBbw/download?force=true&w=800',
+        fallback: 'https://placehold.co/600x420/1D4ED8/FFFFFF?text=Desinfectante+Multiusos+Pisos'
+      },
+      {
+        id: 'jabon-manos',
+        name: 'Jabón Líquido Manos con Glicerina',
+        category: 'higiene',
+        badge: 'pH Balanceado • Glicerina Vegetal',
+        description: 'Limpieza suave hidratante con glicerina 100 % vegetal para dispensadores domésticos, baños de hostales, oficinas y restaurantes.',
+        pricePerL: 8200,
+        supermarketPerL: 11200,
+        isContainer: false,
+        sizes: [
+          { label: '250 ml', mult: 0.25 },
+          { label: '500 ml', mult: 0.5 },
+          { label: '1 Litro', mult: 1 }
+        ],
+        img: 'https://unsplash.com/photos/TsAVkVRlzGs/download?force=true&w=800',
+        fallback: 'https://placehold.co/600x420/0369A1/FFFFFF?text=Jabon+Manos+Glicerina'
+      },
+      {
+        id: 'suavizante-textil',
+        name: 'Suavizante Textil Biodegradable',
+        category: 'hogar',
+        badge: 'Fórmula Clima Cálido Costero',
+        description: 'Acondicionador textil de origen vegetal que reduce estática, protege tejidos y deja frescura duradera en el clima húmedo de Santa Marta.',
+        pricePerL: 6800,
+        supermarketPerL: 9200,
+        isContainer: false,
+        sizes: [
+          { label: '500 ml', mult: 0.5 },
+          { label: '1 Litro', mult: 1 },
+          { label: '3,8 L (Galón)', mult: 3.8 }
+        ],
+        img: 'https://unsplash.com/photos/1FIlxB9CcXU/download?force=true&w=800',
+        fallback: 'https://placehold.co/600x420/2563EB/FFFFFF?text=Suavizante+Textil+Eco'
+      },
+      {
+        id: 'plan-b2b-20l',
+        name: 'Bidón Retornable B2B (20 Litros)',
+        category: 'b2b',
+        badge: 'Ahorro 34,7 % • Hostales y Cafés',
+        description: 'Abastecimiento institucional de 20 L (Detergente, Lavaloza o Desinfectante a $6.200/L) con entrega semanal y recolección del bidón vacío.',
+        pricePerL: 6200,
+        supermarketPerL: 9500,
+        isContainer: false,
+        sizes: [
+          { label: 'Bidón 20 L (Detergente)', mult: 20 },
+          { label: 'Bidón 20 L (Lavaloza)', mult: 20 },
+          { label: 'Bidón 20 L (Multiusos)', mult: 20 }
+        ],
+        img: 'https://unsplash.com/photos/wW5YekBQq-w/download?force=true&w=800',
+        fallback: 'https://placehold.co/600x420/172554/FFFFFF?text=Plan+B2B+Bidon+20+Litros'
+      },
+      {
+        id: 'envase-reutilizable',
+        name: 'Envase Reutilizable (Vidrio 1 L / HDPE 3,8 L)',
+        category: 'b2b',
+        badge: '100 % Retornable • Larga Vida',
+        description: 'Frasco de vidrio ámbar/transparente de 1 L con válvula dosificadora o garrafa HDPE de alta resistencia de 3,8 L para tus recargas semanales.',
+        pricePerL: 6500,
+        supermarketPerL: 9000,
+        isContainer: true,
+        sizes: [
+          { label: 'Frasco Vidrio 1 L', mult: 1 },
+          { label: 'Garrafa HDPE 3,8 L', mult: 1 }
+        ],
+        img: 'https://unsplash.com/photos/tU0AqpO5f2E/download?force=true&w=800',
+        fallback: 'https://placehold.co/600x420/1E40AF/FFFFFF?text=Envase+Reutilizable+Vidrio+HDPE'
+      }
+    ];
+
+    let activeCategory = 'all';
+    let selectedSizes = {};
+    PRODUCTS.forEach(p => { selectedSizes[p.id] = 0; });
+    let cart = [];
+
+    function formatCOP(val) {
+      return '$' + Math.round(val).toLocaleString('es-CO') + ' COP';
+    }
+
+    function filterCategory(cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.style.backgroundColor = '#1d4ed8';
+          btn.style.color = '#ffffff';
+          btn.style.fontWeight = '700';
+          btn.style.border = 'none';
+        } else {
+          btn.style.backgroundColor = '#ffffff';
+          btn.style.color = '#334155';
+          btn.style.fontWeight = '600';
+          btn.style.border = '1px solid #e2e8f0';
+        }
+      });
+      renderCatalog();
+    }
+
+    function selectProductSize(prodId, sizeIdx) {
+      selectedSizes[prodId] = sizeIdx;
+      renderCatalog();
+    }
+
+    function renderCatalog() {
+      const grid = document.getElementById('product-grid');
+      const hasBYOC = document.getElementById('byoc-toggle').checked;
+      const filtered = activeCategory === 'all'
+        ? PRODUCTS
+        : PRODUCTS.filter(p => p.category === activeCategory);
+
+      grid.innerHTML = filtered.map(prod => {
+        const sIdx = selectedSizes[prod.id] || 0;
+        const sizeObj = prod.sizes[sIdx];
+        const basePrice = prod.pricePerL * sizeObj.mult;
+        const discountFactor = (!prod.isContainer && hasBYOC) ? 0.95 : 1.0;
+        const finalPrice = basePrice * discountFactor;
+        const superPrice = prod.supermarketPerL * sizeObj.mult;
+        const savedAmount = Math.max(0, superPrice - finalPrice);
+        const savedPct = Math.round((savedAmount / superPrice) * 100);
+
+        const sizePills = prod.sizes.map((s, idx) => `
+          <button
+            onclick="selectProductSize('${prod.id}', ${idx})"
+            style="padding: 0.35rem 0.65rem; border-radius: 0.55rem; font-size: 0.75rem; font-weight: 700; border: 1px solid ${idx === sIdx ? '#1d4ed8' : '#cbd5e1'}; background-color: ${idx === sIdx ? '#1d4ed8' : '#ffffff'}; color: ${idx === sIdx ? '#ffffff' : '#334155'};"
+          >
+            ${s.label}
+          </button>
+        `).join('');
+
+        return `
+          <article class="product-card">
+            <div>
+              <div class="product-img-wrap">
+                <img
+                  src="${prod.img}"
+                  onerror="this.onerror=null;this.src='${prod.fallback}';"
+                  alt="${prod.name}"
+                  loading="lazy"
+                />
+                <span class="pill-badge-top">${prod.badge}</span>
+                <span class="pill-badge-save">Ahorras ${savedPct} %</span>
+              </div>
+
+              <div style="padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 700; color: #172554; line-height: 1.3;">${prod.name}</h3>
+                <p style="font-size: 0.85rem; color: #475569; line-height: 1.55;">${prod.description}</p>
+
+                <div>
+                  <p style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 0.4rem;">Selecciona presentación a granel:</p>
+                  <div class="flex flex-wrap" style="gap: 0.4rem;">${sizePills}</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 1rem 1.25rem 1.25rem 1.25rem; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">
+              <div class="flex items-end justify-between" style="margin-bottom: 0.85rem;">
+                <div>
+                  <p style="font-size: 0.72rem; color: #64748b; text-decoration: line-through;">Supermercado: ${formatCOP(superPrice)}</p>
+                  <p style="font-size: 1.35rem; font-weight: 800; color: #1e3a8a; line-height: 1.15;">${formatCOP(finalPrice)}</p>
+                </div>
+                <span style="font-size: 0.75rem; font-weight: 700; color: #1d4ed8; background-color: #eff6ff; border: 1px solid #bfdbfe; padding: 0.25rem 0.6rem; border-radius: 0.5rem;">
+                  -${formatCOP(savedAmount)}
+                </span>
+              </div>
+
+              <button onclick="addToCart('${prod.id}')" class="btn-primary" style="width: 100%; padding: 0.75rem 1rem; font-size: 0.85rem;">
+                + Agregar a Mi Recarga
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function addToCart(prodId) {
+      const prod = PRODUCTS.find(p => p.id === prodId);
+      const sIdx = selectedSizes[prod.id] || 0;
+      const sizeObj = prod.sizes[sIdx];
+      const key = `${prod.id}__${sIdx}`;
+      const existing = cart.find(item => item.key === key);
+
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          key,
+          prodId: prod.id,
+          name: prod.name,
+          sizeLabel: sizeObj.label,
+          mult: sizeObj.mult,
+          pricePerL: prod.pricePerL,
+          supermarketPerL: prod.supermarketPerL,
+          isContainer: prod.isContainer,
+          qty: 1
+        });
+      }
+      updateCartUI();
+      showToast(`Agregado: ${prod.name} (${sizeObj.label})`);
+    }
+
+    function addPresetB2B() {
+      selectedSizes['plan-b2b-20l'] = 0;
+      addToCart('plan-b2b-20l');
+      toggleCart(true);
+    }
+
+    function changeCartQty(key, delta) {
+      const idx = cart.findIndex(i => i.key === key);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const hasBYOC = document.getElementById('byoc-toggle').checked;
+      const byocBanner = document.getElementById('cart-byoc-banner');
+      byocBanner.innerHTML = hasBYOC
+        ? `<span>🧴 Descuento «Trae tu envase» (-5 %) activo</span><button onclick="document.getElementById('byoc-toggle').click()" style="text-decoration:underline; color:#1d4ed8; font-weight:700;">Desactivar</button>`
+        : `<span>⚠️ Sin envase propio (préstamo $4.000 reembolsable)</span><button onclick="document.getElementById('byoc-toggle').click()" style="text-decoration:underline; color:#1d4ed8; font-weight:700;">Activar -5%</button>`;
+
+      const totalCount = cart.reduce((acc, i) => acc + i.qty, 0);
+      document.getElementById('nav-cart-count').textContent = totalCount;
+
+      const container = document.getElementById('cart-items');
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center" style="padding: 3rem 1rem;">
+            <div style="width: 3.5rem; height: 3.5rem; border-radius: 1rem; background-color: #eff6ff; color: #1d4ed8; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.85rem auto; font-size: 1.5rem;">🧴</div>
+            <p style="font-weight: 700; color: #0f172a; margin-bottom: 0.35rem;">Tu canasta de recarga está vacía</p>
+            <p style="font-size: 0.8rem; color: #64748b; line-height: 1.5;">Agrega detergente, lavaloza, desinfectante o bidones B2B de 20 L desde el catálogo.</p>
+          </div>
+        `;
+        document.getElementById('cart-saved').textContent = '$0 COP';
+        document.getElementById('cart-bottles').textContent = '0 botellas';
+        document.getElementById('cart-total').textContent = '$0 COP';
+        return;
+      }
+
+      let totalPay = 0;
+      let totalSaved = 0;
+      let totalLiters = 0;
+
+      container.innerHTML = cart.map(item => {
+        const discountFactor = (!item.isContainer && hasBYOC) ? 0.95 : 1.0;
+        const unitPrice = item.pricePerL * item.mult * discountFactor;
+        const unitSuper = item.supermarketPerL * item.mult;
+        const linePay = unitPrice * item.qty;
+        const lineSaved = Math.max(0, (unitSuper - unitPrice) * item.qty);
+
+        totalPay += linePay;
+        totalSaved += lineSaved;
+        if (!item.isContainer) {
+          totalLiters += item.mult * item.qty;
+        }
+
+        return `
+          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 0.85rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
+            <div>
+              <p style="font-size: 0.85rem; font-weight: 700; color: #172554;">${item.name}</p>
+              <p style="font-size: 0.75rem; color: #64748b;">${item.sizeLabel} • ${formatCOP(unitPrice)} c/u</p>
+              <p style="font-size: 0.72rem; font-weight: 700; color: #1d4ed8; margin-top: 0.15rem;">Ahorras ${formatCOP(lineSaved)}</p>
+            </div>
+            <div class="flex items-center" style="gap: 0.45rem; flex-shrink: 0;">
+              <button onclick="changeCartQty('${item.key}', -1)" style="width: 1.75rem; height: 1.75rem; border-radius: 0.5rem; background-color: #ffffff; border: 1px solid #cbd5e1; font-weight: 700;">-</button>
+              <span style="font-size: 0.8rem; font-weight: 800; width: 1.25rem; text-align: center;">${item.qty}</span>
+              <button onclick="changeCartQty('${item.key}', 1)" style="width: 1.75rem; height: 1.75rem; border-radius: 0.5rem; background-color: #1d4ed8; color: #ffffff; font-weight: 700;">+</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      const bottlesSaved = Math.max(1, Math.round(totalLiters));
+      document.getElementById('cart-saved').textContent = formatCOP(totalSaved);
+      document.getElementById('cart-bottles').textContent = `${bottlesSaved} botella(s) de 1 L`;
+      document.getElementById('cart-total').textContent = formatCOP(totalPay);
+    }
+
+    function toggleCart(open) {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-backdrop');
+      if (open) {
+        backdrop.classList.remove('hidden');
+        drawer.classList.add('open');
+      } else {
+        backdrop.classList.add('hidden');
+        drawer.classList.remove('open');
+      }
+    }
+
+    function checkoutOrder() {
+      if (cart.length === 0) {
+        showToast('Agrega al menos un producto a tu recarga primero');
+        return;
+      }
+      const delivery = document.getElementById('cart-delivery').value;
+      const payment = document.getElementById('cart-payment').value;
+      const total = document.getElementById('cart-total').textContent;
+      const saved = document.getElementById('cart-saved').textContent;
+      const bottles = document.getElementById('cart-bottles').textContent;
+
+      toggleCart(false);
+      document.getElementById('receipt-title').textContent = '¡Orden de Recarga Lista para Dispensación!';
+      document.getElementById('receipt-body').textContent =
+        'Hemos generado tu ticket digital de pesaje con tara certificada. Presenta este código en nuestro punto de atención o estación móvil en Santa Marta.';
+      document.getElementById('receipt-summary').innerHTML = `
+        <p><strong>Código Ticket POS:</strong> #ECO-SM-${Math.floor(1000 + Math.random() * 9000)}</p>
+        <p><strong>Modalidad de Entrega:</strong> ${delivery}</p>
+        <p><strong>Medio de Pago:</strong> ${payment}</p>
+        <p><strong>Total a Pagar:</strong> ${total}</p>
+        <p><strong>Impacto Positivo:</strong> Ahorraste ${saved} y evitaste ${bottles}.</p>
+      `;
+      document.getElementById('receipt-modal').classList.remove('hidden');
+      cart = [];
+      updateCartUI();
+    }
+
+    function submitB2BForm(e) {
+      e.preventDefault();
+      const biz = document.getElementById('b2b-biz').value;
+      const zone = document.getElementById('b2b-zone').value;
+      const vol = document.getElementById('b2b-vol').value;
+      const phone = document.getElementById('b2b-phone').value;
+
+      document.getElementById('receipt-title').textContent = '¡Solicitud B2B Registrada!';
+      document.getElementById('receipt-body').textContent =
+        `Nuestro equipo comercial (Juan Manuel Cataño & Kevin Parra) visitará ${biz} con 1 litro de muestra gratuita y las fichas técnicas NSO INVIMA.`;
+      document.getElementById('receipt-summary').innerHTML = `
+        <p><strong>Establecimiento:</strong> ${biz}</p>
+        <p><strong>Zona Ruta B2B:</strong> ${zone}</p>
+        <p><strong>Plan Seleccionado:</strong> ${vol}</p>
+        <p><strong>WhatsApp Contacto:</strong> ${phone}</p>
+      `;
+      document.getElementById('receipt-modal').classList.remove('hidden');
+      e.target.reset();
+    }
+
+    function closeReceiptModal() {
+      document.getElementById('receipt-modal').classList.add('hidden');
+    }
+
+    function setCalcPreset(det, lav, pis, man) {
+      document.getElementById('rng-det').value = det;
+      document.getElementById('rng-lav').value = lav;
+      document.getElementById('rng-pis').value = pis;
+      document.getElementById('rng-man').value = man;
+      recalcImpact();
+    }
+
+    function recalcImpact() {
+      const det = Number(document.getElementById('rng-det').value);
+      const lav = Number(document.getElementById('rng-lav').value);
+      const pis = Number(document.getElementById('rng-pis').value);
+      const man = Number(document.getElementById('rng-man').value);
+
+      document.getElementById('lbl-det').textContent = `${det} Litros / mes`;
+      document.getElementById('lbl-lav').textContent = `${lav} Litros / mes`;
+      document.getElementById('lbl-pis').textContent = `${pis} Litros / mes`;
+      document.getElementById('lbl-man').textContent = `${man} Litros / mes`;
+
+      const saveDet = det * (11500 - 8500 * 0.95);
+      const saveLav = lav * (9800 - 7200 * 0.95);
+      const savePis = pis * (7500 - 5400 * 0.95);
+      const saveMan = man * (10200 - 7500 * 0.95);
+
+      const monthlySave = saveDet + saveLav + savePis + saveMan;
+      const annualSave = monthlySave * 12;
+      const annualLiters = (det + lav + pis + man) * 12;
+      const plasticKg = (annualLiters * 0.05).toFixed(1);
+
+      document.getElementById('res-money').textContent = formatCOP(annualSave);
+      document.getElementById('res-monthly').textContent = `Equivale a ${formatCOP(monthlySave)} ahorrados cada mes`;
+      document.getElementById('res-bottles').textContent = `${annualLiters} uds`;
+      document.getElementById('res-plastic').textContent = `${plasticKg} kg`;
+    }
+
+    function openCanvasModal(tab) {
+      document.getElementById('canvas-modal').classList.remove('hidden');
+      switchModalTab(tab || 'canvas');
+    }
+
+    function closeCanvasModal() {
+      document.getElementById('canvas-modal').classList.add('hidden');
+    }
+
+    function switchModalTab(tabName) {
+      ['canvas', 'empatia', 'finanzas'].forEach(t => {
+        const panel = document.getElementById(`modal-panel-${t}`);
+        const btn = document.getElementById(`tab-btn-${t}`);
+        if (t === tabName) {
+          panel.classList.remove('hidden');
+          btn.style.backgroundColor = '#ffffff';
+          btn.style.color = '#1e3a8a';
+          btn.style.fontWeight = '700';
+          btn.style.border = '1px solid #e2e8f0';
+          btn.style.borderBottom = 'none';
+        } else {
+          panel.classList.add('hidden');
+          btn.style.backgroundColor = 'transparent';
+          btn.style.color = '#475569';
+          btn.style.fontWeight = '600';
+          btn.style.border = 'none';
+        }
+      });
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    let toastTimer = null;
+    function showToast(msg) {
+      const el = document.getElementById('toast-banner');
+      document.getElementById('toast-msg').textContent = msg;
+      el.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        el.classList.add('hidden');
+      }, 2800);
+    }
+
+    function initApp() {
+      renderCatalog();
+      updateCartUI();
+      recalcImpact();
+    }
+
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', initApp);
+    } else {
+      initApp();
+    }
+  </script>
+</body>
+</html>
